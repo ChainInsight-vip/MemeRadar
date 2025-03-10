@@ -1,0 +1,173 @@
+.kol-container {
+	width: 560px;
+	background: #222733;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	border-radius: 16px;
+	padding: 20px;
+	padding-top: 0;
+	display: flex;
+	flex-direction: column;
+
+	.kol-header {
+		display: flex;
+		height: 64px;
+		align-items: center;
+
+		.kol-title {
+			// font-family: MiSans, MiSans;
+			font-weight: 600;
+			font-size: 20px;
+			color: #859AFF;
+			flex: 1;
+		}
+	
+		.kol-close-btn {
+			width: 24px;
+			height: 24px;
+			cursor: pointer;
+		}
+	}
+
+	.kol-seperator {
+		height: 1px;
+		background: rgba(179,206,228,0.1);
+	}
+
+	.kol-content {
+		margin-top: 16px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.kol-trade-info {
+			width: 280px;
+		}
+		.kol-community-info {
+			width: 220px;
+		}
+		.info-title {
+			// font-family: MiSans, MiSans;
+			font-weight: 600;
+			font-size: 16px;
+			color: #FFFFFF;
+		}
+		.info-desc {
+			margin-top: 8px;
+			padding: 8px 12px;
+			background: rgba(0,255,255,0.1);
+			border-radius: 8px;
+			// font-family: MiSans, MiSans;
+			font-weight: 600;
+			font-size: 12px;
+			color: #00FFFF;
+		}
+
+		.info-list{
+			margin-top: 12px;
+			border-radius: 8px;
+			overflow: hidden;
+			.header-row {
+				display: flex;
+				justify-content: flex-start;
+				background: rgba(10,15,22,0.4);
+				margin-bottom: 2px;
+				padding: 8px 12px;
+				.header-col {
+					// font-family: MiSans, MiSans;
+					font-weight: 400;
+					font-size: 12px;
+					color: #7A8599;
+					&.kol-name {
+						width: 110px;
+					}
+					&.buy-count {
+						width: 80px;
+					}
+					&.sell-precent {
+						width: 50px;
+					}
+					&.community-name {
+						min-width: 140px;
+						width: 140px;
+					}
+					&.community-count {
+						width: 48px
+					}
+				}
+			}
+			.header-row-around {
+				justify-content: space-around;
+			}
+			.data-row {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				background: rgba(10,15,22,0.4);
+				margin-bottom: 2px;
+				padding: 6px 12px;
+				height: 32px;
+				box-sizing: border-box;
+				.data-col {
+					// font-family: MiSans, MiSans;
+					font-size: 12px;
+					font-weight: 400;
+					color: #FFFFFF;
+
+					&.kol-avatar {
+						min-width: 20px;
+						width: 20px;
+						height: 20px;
+						overflow: hidden;
+						border-radius: 10px;
+						margin-right: 8px;
+					}
+					&.kol-name {
+						min-width: 80px;
+						max-width: 80px;
+						width: 80px;
+						font-weight: 600;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+					&.buy-count {
+						width: 80px;
+					}
+					&.sell-precent {
+						width: 50px;
+						color: #B3CEE4;
+					}
+					&.community-name {
+						display: flex;
+						align-items: center;
+						width: 140px;
+						min-width: 140px;
+						font-weight: 600;
+						.community-avator {
+							margin-right: 8px;
+							width: 20px;
+							height: 20px;
+							border-radius: 50%;
+						}
+
+						.group-name {
+							flex: 1;
+							font-weight: 600;
+							font-size: 12px;
+							color: #FFFFFF;
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+						}
+					}
+					&.community-count {
+						width: 48px;
+						// font-family: MiSans, MiSans;
+						font-weight: 600;
+						color: #B3CEE4;
+					}
+				}
+			}
+		}
+	}
+
+}

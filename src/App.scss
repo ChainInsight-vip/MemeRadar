@@ -1,0 +1,316 @@
+div {
+	box-sizing: border-box;
+}
+
+:where(*) {
+    border-width: 0px;
+    border-style: solid;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+button {
+	background: transparent;
+	padding: 0px;
+	outline: none;
+	border-color: transparent;
+}
+
+:where(button, input, optgroup, select, textarea) {
+	margin: 0;
+}
+
+input:focus-visible {
+    outline: none;
+    box-shadow: none !important;
+}
+
+#cis-root {
+	display: flex;
+	flex-direction: row;
+
+	font-family: MiSans, "OKXSans", "DINPro-Medium", "IBMPlexSans-Medium", "PingFang SC", "apple-system", "BlinkMacSystemFont", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Arial", "sans-serif";
+}
+
+@font-face {
+    font-family: MiSans;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100;
+    src: url(https://img.chaininsight.vip/file/_b11cd5a0-1254-4d8d-9c18-d5dd0d664281.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: MiSans;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+    src: url(https://img.chaininsight.vip/file/_b11cd5a0-1254-4d8d-9c18-d5dd0d664281.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: MiSans;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://img.chaininsight.vip/file/_b11cd5a0-1254-4d8d-9c18-d5dd0d664281.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: MiSans;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(https://img.chaininsight.vip/file/_b18d66a6-cbe3-4c28-b7b6-7a261209720a.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: MiSans;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url(https://img.chaininsight.vip/file/_b18d66a6-cbe3-4c28-b7b6-7a261209720a.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: MiSans;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url(https://img.chaininsight.vip/file/_4934f5d1-db10-4f3a-b3f1-9a0ab0d41e70.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: MiSans;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 900;
+    src: url(https://img.chaininsight.vip/file/_9bc779e7-ce30-43e4-b2ec-68633ea213f6.woff2) format("woff2")
+}
+
+#cis-panel {
+	min-width: 290px;
+	background: #859AFF;
+	border-radius: 8px;
+	padding: 4px;
+	height: 48px;
+}
+
+.top-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.panel-section-item {
+	display: flex;
+	align-items: center;
+	height: 18px;
+	color: #BCC2CC;
+	background: #0A0F16;
+	border-radius: 4px;
+	padding: 4px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.cis-flex-row, .cis-flex-row-padding4 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.cis-flex-row-padding4 {
+	padding: 4px;
+}
+
+.cis-entry-item {
+	cursor: pointer;
+}
+
+.icon-container {
+	background: rgba(255,255,255,0.8);
+	margin-left: -3px;
+	height: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px 0 0 3px;
+	padding: 0 4px;
+}
+
+.icon-panel-dev, .icon-panel-kol {
+	width: 24px;
+	height: 10px;
+}
+
+.cis-number {
+	font-family: MiSans;
+	font-weight: 600;
+	font-size: 12px;
+	color: #00FFFF;
+	margin-right: 2px;
+}
+
+.cis-desc {
+	font-family: MiSans;
+	font-size: 12px;
+	color: #BCC2CC;
+}
+
+.icon-panel-twitter {
+	width: 12px;
+	height: 12px;
+	margin-right: 4px;
+}
+
+.icon-panel-call {
+	width: 10px;
+	height: 12px;
+}
+
+.panel-description-button {
+	// font-family: MiSans, MiSans;
+	font-weight: 600;
+	font-size: 12px;
+	color: #00FFFF;
+	margin-left: 4px;
+}
+
+.icon-panel-next {
+	width: 8px;
+	height: 12px;
+	margin-right: 8px;
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+.ico-refresh-container {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	.ico-refresh {
+		width: 18px;
+		height: 18px;
+		border-radius: 9px;
+		overflow: hidden;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	
+		&:hover {
+			opacity: 0.65;
+		}
+	}
+}
+
+
+.bottom-section {
+	display: flex;
+    height: 18px;
+    margin-top: 4px;
+    align-items: center;
+}
+
+.cis-empty-container {
+	// width: 250px;
+	height: 124px;
+	background: rgba(10,15,22,0.4);
+	border-radius: 0px 0px 8px 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.ico-empty-content{ 
+		width: 40px;
+		height: 48px;
+	}
+	.cis-empty-title {
+		margin-top: 12px;
+		// font-family: MiSans, MiSans;
+		font-size: 12px;
+		color: #7A8599;
+	}
+}
+
+.cis-table-footer {
+	height: 32px;
+	background: rgba(10,15,22,0.2);
+	border-radius: 0px 0px 8px 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.cis-table-footer-title {
+		font-weight: 400;
+		font-size: 12px;
+		color: #7A8599;
+	}
+}
+
+.ac-close-btn {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.update-plugin-container {
+	max-width: 560px;
+	background: #222733;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	border-radius: 16px;
+	padding: 20px;
+	padding-top: 0;
+	display: flex;
+	flex-direction: column;
+	
+	
+	.update-plugin-header {
+		display: flex;
+		height: 64px;
+		align-items: center;
+
+		.update-plugin-title {
+			flex: 1;			
+			font-weight: 600;
+			font-size: 20px;
+			color: #859AFF;
+			text-align: center;
+		}
+	}
+
+	.update-plugin-content {
+		display: flex;
+		flex: 1;			
+		flex-direction: column;
+		align-items: center;
+
+		.update-plugin-text {
+			color: #fff;
+			font-size: 16px;
+			line-height: 20px;
+			text-align: center;
+		}
+
+		.update-plugin-btn {
+			margin-top: 30px;
+			padding: 8px 12px;
+			background-color: #647bf2;
+			border-radius: 8px;
+			color: white;
+	
+			font-weight: 600;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	
+	}
+	
+}
+
+.ico-item-entry {
+	width: 12px;
+	height: 12px;
+}

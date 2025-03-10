@@ -1,0 +1,42 @@
+{
+  "action": {
+     "default_icon": {
+        "128": "icons/icon128.png",
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png"
+     },
+     "default_popup": "popup.html"
+  },
+  "author": "https://chaininsight.vip",
+  "content_scripts": [ {
+     "js": [ "static/index.js" ],
+     "css": [ "static/index.css" ],
+     "matches": [ 
+         "https://ave.ai/*", 
+         "https://gmgn.ai/*", 
+         "https://www.okx.com/*", 
+         "https://*.xxyy.io/*",
+         "https://debot.ai/*",
+         "https://logearn.com/*",
+         "https://angryx.io/*"
+      ],
+     "run_at": "document_start"
+  } ],
+  "description": "在dex上快速识别早期meme机会",
+  "host_permissions": [ "https://chaininsigh.vip/*" ],
+  "icons": {
+     "128": "icons/icon128.png",
+     "16": "icons/icon16.png",
+     "32": "icons/icon32.png",
+     "48": "icons/icon48.png"
+  },
+  "manifest_version": 3,
+  "name": "MemeRadar",
+  "permissions": [ "storage" ],
+  "version": "0.3.0",
+  "web_accessible_resources": [ {
+      "matches": [ "<all_urls>" ],
+      "resources": [ "images/*" ]
+   } ]
+}

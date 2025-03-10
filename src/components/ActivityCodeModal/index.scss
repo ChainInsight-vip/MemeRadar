@@ -1,0 +1,117 @@
+.ac-container {
+	width: 400px;
+	height: 204px;
+	background: #222733;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	border-radius: 16px;
+	padding: 24px;
+
+    .ac-header {
+        display: flex;
+        align-items: center;
+
+        .ac-title {
+            flex: 1;
+            font-weight: 600;
+            font-size: 20px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+
+    
+    .ac-content {
+        width: 100%;
+        margin-top: 20px;
+
+        .ac-input-container {
+            width: 100%;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            height: 56px;
+            display: flex;
+            padding: 8px;
+            align-items: center;
+
+            .ac-input {
+                height: 100%;
+                flex: 1;
+                height: 24px;
+                font-size: 16px;
+                background-color: transparent;
+                color: #fff;
+                caret-color: #859AFF;
+                padding: 10px;
+            }
+            
+            .ac-input::placeholder {
+                color: #7A8599;
+                font-size: 16px;
+            }
+            
+            .ac-activate-btn {
+                width: 80px !important;
+                height: 40px !important;
+                background-color: #8599FF !important;
+                border-radius: 8px !important;
+                color: white !important;
+            
+                font-family: MiSans, MiSans !important;
+                font-weight: 600 !important;
+                font-size: 16px !important;
+            
+                &:hover {
+                    background-color: #647bf2 !important;
+                }
+            }
+            
+        }
+    }
+    
+    .ac-footer {
+        margin-top: 22px;
+        display: flex;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ac-footer-tips {
+            font-size: 14px;
+            color: #BCC2CC;
+        }
+        
+        .ac-tg-group {
+            cursor: pointer;
+            width: 68px;
+            height: 24px;
+            background: #0A0F16;
+            border-radius: 20px;
+            
+            padding-left: 4px;
+            padding-right: 4px;
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+    
+            .icon-tg {
+                width: 16px;
+                height: 16px;
+                margin-right: 2px;
+            }
+            
+            .enter-group-title {
+                font-weight: 600;
+                font-size: 14px;
+                color: #FFFFFF;
+            }
+            
+            .icon-tg-next {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+}
