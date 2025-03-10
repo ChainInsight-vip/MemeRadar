@@ -25,7 +25,14 @@ MemeRadar 是由[**链智**](https://chaininsight.vip)开发提供的一个让�
 - 支持查看全网300+tg喊单频道关于该币的喊单次数及详情。
 
 # 支持平台
-我们目前支持GMGN、OKX、AVE、XXYY 市面上四大主流Dex，用户可以在Dex界面上一眼看到相关数据。
+我们目前已支持一下网站平台：
+- https://ave.ai/*
+- https://gmgn.ai/*
+- https://www.okx.com/*
+- https://www.xxyy.io/*
+- https://debot.ai/*
+- https://logearn.com/*
+- https://angryx.io/*
 
 ## 🚀 快速开始
 ## 安装方式
@@ -62,13 +69,6 @@ MemeRadar 会通过获取您当前访问的 CA，请求相应的 dev 发盘，�
 ```
 yarn install
 ```
-3. 
-
-代码结构说明（核心目录与文件）
-
-分支管理规则（如：main/dev分支）
-
-Issue与PR提交规范（附模板链接更佳）
 
 # 🛠 技术架构
 ## 技术栈
@@ -78,20 +78,9 @@ Issue与PR提交规范（附模板链接更佳）
 - ant-design
 
 ## 扩展API使用说明
-`chrome.storage.set`
-`chrome.storage.get`
+`chrome.storage` 用于存储激活状态
 
-# 📜 许可协议
-明确使用的开源协议（MIT/GPL等）
+## 社交媒体账号
+- 推特：https://x.com/MemeRadar_sol
+- TG: https://t.me/+tDveyOXzyVs2Yzk9
 
-# 📬 联系我们
-问题反馈渠道（GitHub Issues/邮箱）
-
-社交媒体账号（Twitter/博客等）
-
-赞助支持方式（Open Collective/Patreon链接）
-
-# 📌 附加信息
-## 版本更新日志（链接到CHANGELOG.md）
-
-# 致谢名单
